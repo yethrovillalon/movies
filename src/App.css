@@ -7,15 +7,43 @@
   height: 80px;
 }
 
+.App-groupon {
+  width: 100px;
+  height: 69px;
+}
+
+.App-movies {
+  width: 100px;
+  height: 69px;
+}
+
 .App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+  width: 100%;
+  height: 70px;
+  position: relative;
+}
+
+.App-header img {
+  position: absolute;
+  bottom: 0;
+}
+
+.App-header img:nth-of-type(1) {
+  left: 0;
+}
+
+.App-header img:nth-of-type(2) {
+  right: 0;
 }
 
 .App-intro {
   font-size: large;
+}
+
+.App-text {
+  text-align: left;
+  size: 10px;
+  
 }
 
 @keyframes App-logo-spin {
