@@ -4,8 +4,7 @@ import Button from 'react-bootstrap/Button';
 const Peliculas = ({ movies }) => {
     return (
       <div class="table-responsive">
-        {movies.map((movie) => (
-            <table class="table">
+        <table class="table">
               <thead>
                 <tr>
                 <th scope="col">Titulo</th>
@@ -20,6 +19,7 @@ const Peliculas = ({ movies }) => {
                 <th scope="col">Detalle</th>
                 </tr>
               </thead>
+        {movies.map((movie) => (
               <tbody>
                 <tr>
                 <td>{movie.Title}</td>
@@ -34,8 +34,8 @@ const Peliculas = ({ movies }) => {
                 <td>Poner el boton</td>
                 </tr>
               </tbody>
-            </table>
         ))}
+        </table>
       </div>
     )
   };
