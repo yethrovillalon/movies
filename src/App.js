@@ -18,7 +18,7 @@ class App extends Component {
     event.preventDefault(); // Puede o no puede ser necesario dependiendo de lo que esté haciendo
     
     const { value } = event.target;
-    const endpoint = 'http://www.omdbapi.com/?i=tt3896198&apikey=21dee529&t='+value;
+    const endpoint = 'https://www.omdbapi.com/?i=tt3896198&apikey=21dee529&t='+value;
 
     if(value != ""){
       fetch(endpoint)
